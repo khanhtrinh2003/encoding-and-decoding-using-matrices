@@ -8,14 +8,14 @@ while m < 1:
            'O': 'B', 'P': 'C', 'Q': 'D', 'R': 'E', 'S': 'F', 'T': 'G', 'U': 'H', 'V': 'I',
            'W': 'J', 'X': 'K', 'Y': 'L', 'Z': 'M', ' ': ' ', '?': '/', '!': '@', '#': '$',
            ':': ';', '/': '?', '@': '!', '$': '#', ';': ':', }
-    chuoi = input('\nType the sentence: ')
+    sentence = input('\nType the sentence: ')
 
     password = []
 
-    for i in range(len(chuoi)):
+    for i in range(len(sentence)):
         while True:
             try:
-                x = key[chuoi[i]]
+                x = key[sentence[i]]
                 password.append(x)
                 break
             except KeyError:
