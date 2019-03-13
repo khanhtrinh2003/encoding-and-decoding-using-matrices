@@ -6,7 +6,7 @@ while m < 1:
            'y': 'l', 'z': 'm', 'A': 'N', 'B': 'O', 'C': 'P', 'D': 'Q', 'E': 'R', 'F': 'S',
            'G': 'T', 'H': 'U', 'I': 'V', 'J': 'W', 'K': 'X', 'L': 'Y', 'M': 'Z', 'N': 'A',
            'O': 'B', 'P': 'C', 'Q': 'D', 'R': 'E', 'S': 'F', 'T': 'G', 'U': 'H', 'V': 'I',
-           'W': 'J', 'X': 'K', 'Y': 'L', 'Z': 'M'}
+           'W': 'J', 'X': 'K', 'Y': 'L', 'Z': 'M', ' ': ' ', '?': '/', '!': '@', '#': '$', ':':';' }
     chuoi = input('\nType the sentence: ')
 
     password = []
@@ -19,6 +19,7 @@ while m < 1:
                 break
             except KeyError:
                 print('Type again!')
+                break
                 break
     print('result: ',''.join(str(e) for e in password))
     continue
